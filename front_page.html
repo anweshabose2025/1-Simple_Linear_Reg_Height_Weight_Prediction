@@ -1,0 +1,16 @@
+<html>
+<head>
+    <title>Predict Height</title>
+</head>
+<body>
+    <h2>Predict Height</h2>
+    <form action="/" method="post">
+    <lable for='weight'>Enter your Weight (in kg):</lable>
+    <input type="text" id="weight" name="weight" value="0"><br><br>
+    <input type="submit" value="Submit">
+    </form>
+    {% if prediction_text %}
+    <h3>{{prediction_text}}</h3>
+    {% endif %}
+</body>
+</html>
